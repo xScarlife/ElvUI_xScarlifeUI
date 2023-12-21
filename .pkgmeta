@@ -1,8 +1,8 @@
-package-as: ElvUI_xScarlife
+package-as: ElvUI_xScarlifeUI
 manual-changelog:
     filename: CHANGELOG.md
     markup-type: markdown
 move-folders:
-    ElvUI_xScarlife/ElvUI_xScarlife: ElvUI_xScarlife
+    ElvUI_xScarlifeUI/ElvUI_xScarlifeUI: ElvUI_xScarlifeUI
 enable-toc-creation: yes
 enable-nolib-creation: no
