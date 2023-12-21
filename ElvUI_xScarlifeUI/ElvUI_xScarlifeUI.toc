@@ -10,6 +10,7 @@
 ## OptionalDeps: AddOnSkins, ElvUI_WindTools
 ## DefaultState: Enabled
 ## IconTexture: Interface\AddOns\ElvUI_xScarlifeUI\Media\BirdOnlyLogo128
+## X-Curse-Project-ID: 950558
 
 Config.lua
 Core\Load.xml
