@@ -5,3 +5,4 @@ manual-changelog:
 move-folders:
     ElvUI_xScarlife/ElvUI_xScarlife: ElvUI_xScarlife
 enable-toc-creation: yes
+enable-nolib-creation: no
