@@ -17,9 +17,9 @@ Introducing xScarlifeUI, an interface meticulously tailored for ElvUI. Engineere
 xScarlifeUI was initially designed for a 2560x1440 screen resolution. If you’re planning to use it on a 1920x1080 screen, you may need to readjust the windows to ensure optimal display.
 
 ## Required AddOns
-- ElvUI
-- Details! Damage Meter
-- WindTools (Retail only)
+- [ElvUI](https://tukui.org/elvui)
+- [Details! Damage Meter](https://www.curseforge.com/wow/addons/details)
+- [WindTools (Retail only)](https://www.curseforge.com/wow/addons/elvui-windtools)
 
 ## Installation Steps
 1. Make sure to backup your WTF folder. This is a recommended step to make sure you start with a clean profile.
