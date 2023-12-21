@@ -32,4 +32,4 @@ For any questions, feedback, or issues encountered while using xScarlifeUI, plea
 
 ## Credits
 - **Repooc:** for the help developing the installer plugin
-- *Special thanks* to the **TukUI Discord community** for their invaluable assistance.
+- Special thanks to the **TukUI Discord community** for their invaluable assistance.
