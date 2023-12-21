@@ -1,7 +1,8 @@
 # ElvUI_xScarlifeUI: Improving your World of Warcraft adventure
 <div align="center">
-  <img ![xscarlifeui-curse-logo](https://github.com/xScarlife/ElvUI_xScarlifeUI/assets/24465574/ec126d5b-56f9-4b85-a6e8-f776bbf5d4f9)" alt="Logo Description">
+  <img src="[path/to/your/logo.png](https://github.com/xScarlife/ElvUI_xScarlifeUI/assets/24465574/3ad23709-e957-4c5f-bd2f-36f5e3395d56)" alt="xScarlifeUI">
 </div>
+![xscarlifeui-curse-logo](https://github.com/xScarlife/ElvUI_xScarlifeUI/assets/24465574/3ad23709-e957-4c5f-bd2f-36f5e3395d56)
 
 
 Introducing xScarlifeUI, an interface meticulously tailored for ElvUI. Engineered to optimize gameplay and overall game performance, this interface achieves more with less. By streamlining functionality and design, xScarlifeUI minimizes reliance on multiple plugins while enhancing your World of Warcraft experience.
