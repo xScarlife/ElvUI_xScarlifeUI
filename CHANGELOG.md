@@ -1,3 +1,5 @@
-v1.01 12/21/23
+v1.02 12/27/23
 
-• initial release
+• Enabled the buffs to be shown on the party frames.
+• Enabled the rested icon on the player frame.
+
