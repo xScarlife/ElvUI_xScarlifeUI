@@ -52,6 +52,34 @@ E.PopupDialogs.XSCARLIFE_EDITBOX = {
 	hideOnEscape = 1,
 }
 
+E.PopupDialogs.XSCARLIFE_OMNICD_IMPORT_EDITOR = {
+	text = L["Importing Custom Spells will reload UI. Press Cancel to abort."],
+	button1 = ACCEPT,
+	button2 = CANCEL,
+	OnAccept = function(_, data)
+		OmniCD[1].ProfileSharing:CopyCustomSpells(data)
+		C_UI.Reload()
+	end,
+	timeout = 0,
+	whileDead = true,
+	hideOnEscape = true,
+	preferredIndex = 3
+}
+
+E.PopupDialogs.XSCARLIFE_OMNICD_IMPORT_PROFILE = {
+	text = L["Press Accept to save profile %s. Addon will switch to the imported profile."],
+	button1 = ACCEPT,
+	button2 = CANCEL,
+	OnAccept = function(_, data)
+		OmniCD[1].ProfileSharing:CopyProfile(data.profileType, data.profileKey, data.profileData)
+		OmniCD[1]:ACR_NotifyChange()
+	end,
+	timeout = 0,
+	whileDead = true,
+	hideOnEscape = true,
+	preferredIndex = 3
+}
+
 function Engine:SetupDetails()
 	_G.Details:EraseProfile(Engine.ProfileData.Details.ProfileTitle)
 
@@ -60,6 +88,33 @@ function Engine:SetupDetails()
 	if _G.Details:GetCurrentProfileName() ~= Engine.ProfileData.Details.ProfileTitle then
 		_G.Details:ApplyProfile(Engine.ProfileData.Details.ProfileTitle)
 	end
+end
+
+function Engine:SetupOmniCD()
+		if not E:IsAddOnEnabled('OmniCD') then return end
+
+		local profileType, profileKey, profileData = OmniCD[1].ProfileSharing:Decode(Engine.ProfileData.OmniCD.ProfileString)
+		if not profileData then
+			return
+		end
+	
+		local prefix = '[IMPORT-%s]%s'
+		local n = 1
+		local key
+		while true do
+			key = format(prefix, n, profileKey)
+			if not OmniCDDB.profiles[key] then
+				profileKey = key
+				break
+			end
+			n = n + 1
+		end
+	
+		if profileType == "cds" then
+			E:StaticPopup_Show('XSCARLIFE_OMNICD_IMPORT_EDITOR', nil, nil, profileData)
+		else
+			E:StaticPopup_Show('XSCARLIFE_OMNICD_IMPORT_PROFILE', format('|cffffd200%s|r', profileKey), nil, {profileType=profileType, profileKey=profileKey, profileData=profileData})
+		end
 end
 
 function Engine:SetupWindTools()

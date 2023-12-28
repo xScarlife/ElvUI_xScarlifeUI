@@ -130,6 +130,18 @@ Engine.InstallerData = {
 			PluginInstallFrame.Next:SetEnabled(acceptedTerms)
 		end,
 		[5] = function()
+			PluginInstallFrame.SubTitle:SetText('OmniCD Profile')
+			PluginInstallFrame.Desc1:SetText(format('Please click the button below to apply %s OmniCD profile!', config.Title))
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() if not E:IsAddOnEnabled('OmniCD') then return end Engine:SetupOmniCD() end)
+			PluginInstallFrame.Option1:SetText(L["Setup OmniCD"])
+			PluginInstallFrame.Option1:SetEnabled(acceptedTerms and (E:IsAddOnEnabled('OmniCD') and not (Engine.ProfileData.OmniCD.ProfileString == '' or Engine.ProfileData.OmniCD.ProfileString == nil)))
+			
+			PluginInstallFrame.Next:SetEnabled(acceptedTerms)
+		end,
+		[6] = function()
 			PluginInstallFrame.SubTitle:SetText('|cff5385edW|r|cff5094eai|r|cff4da4e7n|r|cff4ab4e4d|r|cff47c0e1T|r|cff44cbdfo|r|cff41d7ddo|r|cff41d7ddl|r|cff41d7dds|r')
 			PluginInstallFrame.Desc1:SetText(L["This step will configure the settings for |cff5385edW|r|cff5094eai|r|cff4da4e7n|r|cff4ab4e4d|r|cff47c0e1T|r|cff44cbdfo|r|cff41d7ddo|r|cff41d7ddl|r|cff41d7dds|r."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -142,7 +154,7 @@ Engine.InstallerData = {
 
 			PluginInstallFrame.Next:SetEnabled(acceptedTerms)
 		end,
-		[6] = function()
+		[7] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -163,8 +175,9 @@ Engine.InstallerData = {
 		[2] = L["General Profile"],
 		[3] = L["Private Profile"],
 		[4] = 'Details',
-		[5] = L["Windtools"],
-		[6] = L["Installation Complete"],
+		[5] = 'OmniCD',
+		[6] = L["Windtools"],
+		[7] = L["Installation Complete"],
 	},
 	StepTitlesColor = config.Installer.StepTitlesColor,
 	StepTitlesColorSelected = config.Installer.StepTitlesColorSelected,
