@@ -7,7 +7,7 @@ E.PopupDialogs.XSCARLIFE_IMPORT_PRIVATE_PROFILE_OVERWRITE = {
 	text = L["|cffFF3333WARNING:|r You are about to overwrite your settings for your current Private Profile (Character Settings).|nClick the button below to confirm you want to overwrite this Private Profile."],
 	button1 = ACCEPT,
 	button2 = CANCEL,
-	OnAccept = function(_, data) Engine:ImportProfile(data.ProfileString) end,
+	OnAccept = function(_, data) Engine:ImportProfile(data.ProfileString) xScarlifeCharDB.DetailsStepNeeded = true ReloadUI() end,
 	timeout = 0,
 	whileDead = 1,
 	hideOnEscape = false,
@@ -129,6 +129,7 @@ end
 function Engine:SetupProfile(profile)
 	local profileImport = profile and profile or 'PROFILE1'
 	D:ImportProfile(Engine.ProfileData.ElvUI[profileImport])
+	E.db.chat.hideVoiceButtons = true
 end
 
 local function SetImportedProfile(profileType, profileKey, profileData, force)

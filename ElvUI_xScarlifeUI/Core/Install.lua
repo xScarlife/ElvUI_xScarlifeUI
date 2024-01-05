@@ -68,6 +68,7 @@ Engine.InstallerData = {
 
 			if xScarlifeCharDB.DetailsStepNeeded then
 				acceptedTerms = true
+				xScarlifeCharDB.DetailsStepNeeded = nil
 				PI:SetPage(4, 3)
 			end
 		end,
@@ -118,7 +119,7 @@ Engine.InstallerData = {
 			PluginInstallFrame.Desc3:SetText(GetDetailsDesc3Text())
 
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() if not E:IsAddOnEnabled('Details') then return end xScarlifeCharDB.DetailsStepNeeded = nil Engine:SetupDetails() end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() if not E:IsAddOnEnabled('Details') then return end Engine:SetupDetails() end)
 			PluginInstallFrame.Option1:SetText(L["Setup Details"])
 			PluginInstallFrame.Option1:SetEnabled(acceptedTerms and E:IsAddOnEnabled('Details') and not xScarlifeCharDB.ASEmbedEnabled)
 			
