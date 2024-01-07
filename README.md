@@ -28,6 +28,9 @@ xScarlifeUI was initially designed for a 2560x1440 screen resolution. If you’r
 3. Drag the folders to your AddOns folder. Example: `C:\World of Warcraft\_retail_\Interface\AddOns`.
 4. Launch World of Warcraft and follow the on-screen installer steps carefully. Make sure you have all required AddOns enabled before entering the in-game world.
 
+## Installation Guide
+Please watch the step by step guide by clicking this link: [Click Here](https://youtu.be/cQJ1uWXA938)
+
 ## Support and Feedback
 For any questions, feedback, or issues encountered while using xScarlifeUI, please visit the Discord to seek assistance or report problems. Your feedback is invaluable in improving and maintaining the installer.
 
