@@ -1,4 +1,4 @@
-v1.04 01/17/2024
+v1.05 02/7/2024
 
-Changelog Retail:
-    • TOC Bump for 10.2.5
+Changelog Classic:
+    • TOC Bump for 1.15.1
