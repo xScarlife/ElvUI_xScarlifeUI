@@ -17,7 +17,7 @@ jobs:
       WAGO_URL: https://addons.wago.io/addons/elvui-xscarlifeui
     steps:
       - name: Clone Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 100
       - name: Setup Environment
