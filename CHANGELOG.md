@@ -1,3 +1,3 @@
-v1.08 05/3/2024
+v1.09 05/8/2024
 
-Updates for Cata
+Version number update for WoW Retail - Patch 10.2.7
