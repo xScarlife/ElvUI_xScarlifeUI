@@ -1,3 +1,3 @@
-v1.09 05/8/2024
+v1.10 07/25/2024
 
-Version number update for WoW Retail - Patch 10.2.7
+Version number update for WoW Retail - Patch 11.0.0 and SoD/Classic 1.15.3
