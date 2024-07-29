@@ -1,3 +1,3 @@
-v1.10 07/25/2024
+v1.11 07/29/2024
 
-Version number update for WoW Retail - Patch 11.0.0 and SoD/Classic 1.15.3
+Removed the pet happiness icon and data text for Cata Classic.
