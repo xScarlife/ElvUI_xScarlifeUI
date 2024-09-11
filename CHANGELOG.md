@@ -1,4 +1,4 @@
-v1.13 08/20/2024
+v1.14 09/11/2024
 
 Retail Patch Notes for ElvUI_xScarlifeUI:
-Updated for Retail patch 11.0.2
+Fixed an issue with OmniCD prompt box not appearing due to incorrect import string.
