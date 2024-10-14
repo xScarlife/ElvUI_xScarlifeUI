@@ -9,7 +9,7 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu24
     env:
       CF_API_KEY: ${{ secrets.CF_API_KEY }}
       CF_URL: https://curseforge.com/wow/addons/elvui_xscarlifeui
@@ -23,7 +23,7 @@ jobs:
       - name: Setup Environment
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Release Job
-        uses: BigWigsMods/packager@v2.2.2
+        uses: BigWigsMods/packager@master
       - name: Notify Discord
         if: success()
         uses: repooc/djs-actions@my_changes
