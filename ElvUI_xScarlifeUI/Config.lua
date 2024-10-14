@@ -44,6 +44,9 @@ Engine.ProfileData = {
 			},
 		},
 	},
+	BigWigs = {
+		ProfileString = ''
+	},
 	--[[
 		## Details Profile Strings Help
 		##
