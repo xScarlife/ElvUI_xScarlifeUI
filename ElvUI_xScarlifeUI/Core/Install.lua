@@ -103,7 +103,7 @@ Engine.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() local profile = E.Retail and Engine.ProfileData.ElvUI.PRIVATE1 or Engine.ProfileData.ElvUI.PRIVATE2 local profileName = E.Retail and Engine.ProfileData.ElvUI.PRIVATE1NAME or Engine.ProfileData.ElvUI.PRIVATE2NAME E:StaticPopup_Show('XSCARLIFE_IMPORT_PRIVATE_PROFILE_OVERWRITE', nil, nil, {ProfileString = profile, ProfileName = profileName}) end)
 			PluginInstallFrame.Option1:SetText(Engine:GetProfileButtonText('PRIVATE'))
 			PluginInstallFrame.Option1:SetEnabled(Engine:GetProfileButtonState('PRIVATE'))
-			
+
 			PluginInstallFrame.Option2:Hide()
 			-- PluginInstallFrame.Option2:SetShown(Engine.ProfileData.ElvUI.PRIVATE2TEASER or not (Engine.ProfileData.ElvUI.PRIVATE2 == '' or Engine.ProfileData.ElvUI.PRIVATE2 == nil))
 			-- PluginInstallFrame.Option2:SetScript('OnClick', function() E:StaticPopup_Show('XSCARLIFE_IMPORT_PRIVATE_PROFILE_OVERWRITE', nil, nil, {ProfileString = Engine.ProfileData.ElvUI.PRIVATE2}) end)
@@ -122,7 +122,7 @@ Engine.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() if not E:IsAddOnEnabled('Details') then return end Engine:SetupDetails() end)
 			PluginInstallFrame.Option1:SetText(L["Setup Details"])
 			PluginInstallFrame.Option1:SetEnabled(acceptedTerms and E:IsAddOnEnabled('Details') and not xScarlifeCharDB.ASEmbedEnabled)
-			
+
 			PluginInstallFrame.Option2:SetShown(xScarlifeCharDB.ASEmbedEnabled)
 			PluginInstallFrame.Option2:SetScript('OnClick', function() if E:IsAddOnEnabled('Details') then xScarlifeCharDB.DetailsStepNeeded = true xScarlifeCharDB.ASEmbedEnabled = false AS:SetOption('EmbedSystem', false) AS:SetOption('EmbedSystemDual', false) ReloadUI() end end)
 			PluginInstallFrame.Option2:SetText('Fix Conflict')
@@ -139,7 +139,7 @@ Engine.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() if not E:IsAddOnEnabled('OmniCD') then return end Engine:SetupOmniCD() end)
 			PluginInstallFrame.Option1:SetText(L["Setup OmniCD"])
 			PluginInstallFrame.Option1:SetEnabled(acceptedTerms and (E:IsAddOnEnabled('OmniCD') and not (Engine.ProfileData.OmniCD.ProfileString == '' or Engine.ProfileData.OmniCD.ProfileString == nil)))
-			
+
 			PluginInstallFrame.Next:SetEnabled(acceptedTerms)
 		end,
 		[6] = function()
@@ -156,6 +156,18 @@ Engine.InstallerData = {
 			PluginInstallFrame.Next:SetEnabled(acceptedTerms)
 		end,
 		[7] = function()
+			PluginInstallFrame.SubTitle:SetText('BigWigs')
+			PluginInstallFrame.Desc1:SetText('This step will configure the settings for BigWigs')
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() Engine:SetupBigWigs() end)
+			PluginInstallFrame.Option1:SetText('Setup BigWigs')
+			PluginInstallFrame.Option1:SetEnabled(acceptedTerms and E:IsAddOnEnabled('BigWigs'))
+
+			PluginInstallFrame.Next:SetEnabled(acceptedTerms)
+		end,
+		[8] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -178,7 +190,8 @@ Engine.InstallerData = {
 		[4] = 'Details',
 		[5] = 'OmniCD',
 		[6] = L["Windtools"],
-		[7] = L["Installation Complete"],
+		[7] = 'BigWigs',
+		[8] = L["Installation Complete"],
 	},
 	StepTitlesColor = config.Installer.StepTitlesColor,
 	StepTitlesColorSelected = config.Installer.StepTitlesColorSelected,

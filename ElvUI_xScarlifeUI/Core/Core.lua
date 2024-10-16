@@ -97,7 +97,7 @@ function Engine:SetupOmniCD()
 		if not profileData then
 			return
 		end
-	
+
 		local prefix = '[IMPORT-%s]%s'
 		local n = 1
 		local key
@@ -109,7 +109,7 @@ function Engine:SetupOmniCD()
 			end
 			n = n + 1
 		end
-	
+
 		if profileType == "cds" then
 			E:StaticPopup_Show('XSCARLIFE_OMNICD_IMPORT_EDITOR', nil, nil, profileData)
 		else
@@ -123,6 +123,23 @@ function Engine:SetupWindTools()
 		F.Profiles.ImportByString(Engine.ProfileData.WindTools.ALL)
 	else
 		E:Print('|cff5385edW|r|cff5094eai|r|cff4da4e7n|r|cff4ab4e4d|r|cff47c0e1T|r|cff44cbdfo|r|cff41d7ddo|r|cff41d7ddl|r|cff41d7dds|r is not Enabled!')
+	end
+end
+
+local function BigWigsCallback(completed)
+	if not completed then E:Print('BigWigs profile import process has been cancelled. No profile has been imported.') end
+end
+
+function Engine:SetupBigWigs()
+	if not E:IsAddOnEnabled('BigWigs') then E:Print('BigWigs is not Enabled!') return end
+	if not Engine.ProfileData.BigWigs.ProfileString or not Engine.ProfileData.BigWigs.ProfileTitle then return end
+	if Engine.ProfileData.BigWigs.ProfileString == '' or Engine.ProfileData.BigWigs.ProfileTitle == '' then return end
+
+	if _G.BigWigsOptions then
+		BigWigsOptions:SaveImportStringDataFromAddOn('xScarlife', Engine.ProfileData.BigWigs.ProfileString, Engine.ProfileData.BigWigs.ProfileTitle, BigWigsCallback)
+	else
+		E:Print('BigWigs options have not been loaded. Use /bw or /bigwigs in order to load BigWigs options.')
+		E:Print('In order for us to setup a new BigWigs profile, you need to load BigWigs options at least once this session.')
 	end
 end
 
