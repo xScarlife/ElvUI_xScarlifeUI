@@ -127,7 +127,8 @@ function Engine:SetupWindTools()
 end
 
 local function BigWigsCallback(completed)
-	if not completed then E:Print('BigWigs profile import process has been cancelled. No profile has been imported.') end
+	if completed then return end
+	E:Print('BigWigs profile import process has been cancelled. No profile has been imported.')
 end
 
 function Engine:SetupBigWigs()
