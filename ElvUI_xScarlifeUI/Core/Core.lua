@@ -135,12 +135,7 @@ function Engine:SetupBigWigs()
 	if not Engine.ProfileData.BigWigs.ProfileString or not Engine.ProfileData.BigWigs.ProfileTitle then return end
 	if Engine.ProfileData.BigWigs.ProfileString == '' or Engine.ProfileData.BigWigs.ProfileTitle == '' then return end
 
-	if _G.BigWigsOptions then
-		BigWigsOptions:SaveImportStringDataFromAddOn('xScarlife', Engine.ProfileData.BigWigs.ProfileString, Engine.ProfileData.BigWigs.ProfileTitle, BigWigsCallback)
-	else
-		E:Print('BigWigs options have not been loaded. Use /bw or /bigwigs in order to load BigWigs options.')
-		E:Print('In order for us to setup a new BigWigs profile, you need to load BigWigs options at least once this session.')
-	end
+	BigWigsAPI:ImportProfileString('xScarlife', Engine.ProfileData.BigWigs.ProfileString, Engine.ProfileData.BigWigs.ProfileTitle, BigWigsCallback)
 end
 
 function Engine:SetupProfile(profile)
