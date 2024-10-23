@@ -136,7 +136,7 @@ function Engine:SetupBigWigs()
 	if not Engine.ProfileData.BigWigs.ProfileString or not Engine.ProfileData.BigWigs.ProfileTitle then return end
 	if Engine.ProfileData.BigWigs.ProfileString == '' or Engine.ProfileData.BigWigs.ProfileTitle == '' then return end
 
-	BigWigsAPI:ImportProfileString('xScarlife', Engine.ProfileData.BigWigs.ProfileString, Engine.ProfileData.BigWigs.ProfileTitle, BigWigsCallback)
+	BigWigsAPI.RegisterProfile('xScarlife', Engine.ProfileData.BigWigs.ProfileString, Engine.ProfileData.BigWigs.ProfileTitle, BigWigsCallback)
 end
 
 function Engine:SetupProfile(profile)
