@@ -1,6 +1,6 @@
 ## Interface: 110005
 ## Interface-Cata: 40401
-## Interface-Classic: 11504
+## Interface-Classic: 11505
 ## Title: |cff1784D1ElvUI|r |cffFFFFFFxScarlife|r|cff5CE1E6UI|r
 ## Author: xScarlife, Repooc
 ## Version: 1.16
