@@ -1,9 +1,9 @@
-## Interface: 110007
-## Interface-Cata: 40401
-## Interface-Classic: 11505
+## Interface: 110100
+## Interface-Cata: 40402
+## Interface-Classic: 11506
 ## Title: |cff1784D1ElvUI|r |cffFFFFFFxScarlife|r|cff5CE1E6UI|r
 ## Author: xScarlife, Repooc
-## Version: 1.19
+## Version: 1.20
 ## Notes: An |cff1784d1ElvUI|r Profile Installer that was put together by Repooc hat allows you to setup your |cffFFFFFFxScarlife|r|cff5CE1E6UI|r profiles with minimal effort.
 ## SavedVariablesPerCharacter: xScarlifeCharDB
 ## RequiredDeps: ElvUI
