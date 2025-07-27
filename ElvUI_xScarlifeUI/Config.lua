@@ -96,7 +96,7 @@ end
 
 Engine.Config = {
 	MinElvUI = 13.53, --* Minimum version of ElvUI this profile should support
-	Logo = [[Interface\AddOns\ElvUI_xScarlifeUI\Media\Logo512]], --* Logo image that is shown in the installer
+	Logo = [[Interface\AddOns\ElvUI_xScarlifeUI\Media\Logo512.png]], --* Logo image that is shown in the installer
 	Discord = 'https://discord.gg/ZVG2Cea', --* Link to your Discord server
 	Installer = {
 		--* The justification of the text on each step button ('LEFT', 'RIGHT', 'CENTER').
