@@ -19,7 +19,7 @@ local function configTable()
 	local Help = ACH:Group(L["Help"], nil, 99)
 	options.args.help = Help
 	options.args.header = ACH:Header(format('|cff99ff33%s|r', config.Version), 2)
-	options.args.logo = ACH:Description('', 1, nil, 'Interface\\AddOns\\ElvUI_xScarlifeUI\\Media\\Logo512', imageCoords, 160, 160, width, hidden)
+	options.args.logo = ACH:Description('', 1, nil, Engine.Config, imageCoords, 160, 160, width, hidden)
 
 	Help.args.installButton = ACH:Execute(L["Install"], L["Re-Run the installation process."], 5, function() PI:Queue(Engine.InstallerData) E:ToggleOptions() end)
 
