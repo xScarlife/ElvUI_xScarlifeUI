@@ -1,12 +1,12 @@
-v1.21 04/25/2025
+v1.22 07/28/2025
 
 Classic Patch Notes for ElvUI_xScarlifeUI:
-• Made extra modifications to optimize performance
+• Updated installer with new logo
 
-Classic Cata Patch Notes for ElvUI_xScarlifeUI:
-• Updated version number for patch 1.15.7
-• Made extra modifications to optimize performance
+Classic MoP Patch Notes for ElvUI_xScarlifeUI:
+• Updated version number for patch 5.5.0
+• Updated installer with new logo
 
 Retail Patch Notes for ElvUI_xScarlifeUI:
-• Updated version number for patch 11.1.5
-• Made extra modifications to optimize performance
+• Updated version number for patch 11.1.7
+• Updated installer with new logo
