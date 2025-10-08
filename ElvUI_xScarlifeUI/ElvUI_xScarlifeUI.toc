@@ -1,7 +1,7 @@
-## Interface: 110200, 50500, 11507
+## Interface: 110205, 50501, 11507
 ## Title: |cff1784D1ElvUI|r |cffFFFFFFxScarlife|r|cff5CE1E6UI|r
 ## Author: xScarlife, Repooc
-## Version: 1.24
+## Version: 1.25
 ## Notes: An |cff1784d1ElvUI|r Profile Installer that was put together by Repooc hat allows you to setup your |cffFFFFFFxScarlife|r|cff5CE1E6UI|r profiles with minimal effort.
 ## SavedVariablesPerCharacter: xScarlifeCharDB
 ## RequiredDeps: ElvUI
