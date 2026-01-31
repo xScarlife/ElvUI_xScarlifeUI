@@ -138,7 +138,7 @@ Engine.InstallerData = {
 			PluginInstallFrame.Option1:Show()
 			PluginInstallFrame.Option1:SetScript('OnClick', function() if not E:IsAddOnEnabled('OmniCD') then return end Engine:SetupOmniCD() end)
 			PluginInstallFrame.Option1:SetText(L["Setup OmniCD"])
-			PluginInstallFrame.Option1:SetEnabled(acceptedTerms and (E:IsAddOnEnabled('OmniCD') and not (Engine.ProfileData.OmniCD.ProfileString == '' or Engine.ProfileData.OmniCD.ProfileString == nil)))
+			PluginInstallFrame.Option1:SetEnabled(not E.Retail and acceptedTerms and (E:IsAddOnEnabled('OmniCD') and not (Engine.ProfileData.OmniCD.ProfileString == '' or Engine.ProfileData.OmniCD.ProfileString == nil)))
 
 			PluginInstallFrame.Next:SetEnabled(acceptedTerms)
 		end,

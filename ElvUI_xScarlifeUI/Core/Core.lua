@@ -91,6 +91,7 @@ function Engine:SetupDetails()
 end
 
 function Engine:SetupOmniCD()
+		if E.Retail then return end
 		if not E:IsAddOnEnabled('OmniCD') then return end
 
 		local profileType, profileKey, profileData = OmniCD[1].ProfileSharing:Decode(Engine.ProfileData.OmniCD.ProfileString)
