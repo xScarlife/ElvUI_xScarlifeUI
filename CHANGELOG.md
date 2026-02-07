@@ -1,14 +1,14 @@
-v1.31 05/02/2026
+v1.32 07/02/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Changed target group width size for MT Frames
-• Changed target group width size for MA Frames
-• Changed BigWigs bar size
-• Added debuff icons for raid frames
-• Added private auras for raid frames
-• Removed private aura's for raid 1
-• Removed private aura's for raid 2
-• Removed private aura's for raid 3
+• Changed text tag for target frame
+• Changed party frames positioning
+• Changed loot alert frame positioning
+• Changed bank frame size
+• Changed warkbank frame size
+• Changed guild bank item count font
+• Added debuff icon on player frame
+• Added target buffs on target frame
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
 /
