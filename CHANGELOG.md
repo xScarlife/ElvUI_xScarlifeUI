@@ -1,9 +1,8 @@
-v1.34 22/02/2026
+v1.35 29/03/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Updated BigWigs profile
-• Changed player debuff position
-
+• Changed BigWigs timer bar positions.
+• Enabled blocklist for party & raid frames debuffs.
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
 • None
