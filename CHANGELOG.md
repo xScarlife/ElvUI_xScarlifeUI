@@ -1,8 +1,7 @@
-v1.35 29/03/2026
+v1.36 31/03/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Changed BigWigs timer bar positions.
-• Enabled blocklist for party & raid frames debuffs.
+• Added Absorb Shield function on the player frame & changed coloring.
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
 • None
