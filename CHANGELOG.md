@@ -1,7 +1,14 @@
-v1.36 31/03/2026
+v1.37 18/04/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Added Absorb Shield function on the player frame & changed coloring.
+• Enabled TargetTarget frame
+• Added custom text to TargetTarget frame
+• Enabled targeting sound
+• Changed max overflow percentage on player frame
+• Changed party auras style to a textured icon
+• Adjusted party auras size
+• Enabled debuffs on boss frames
+• Enabled player filters next to target frame
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
 • None
