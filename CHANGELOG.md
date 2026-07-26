@@ -1,10 +1,12 @@
-v1.40 17/06/2026
+v1.41 26/07/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Updated toc for patch 12.0.7
+• Changed BigWigs bar positioning.
+• Updated ElvUI profile with latest changes.
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
 • None
 
 Patch Notes for ElvUI_xScarlifeUI Classic MoP:
-• None
+• Changed BigWigs bar positioning.
+• Updated ElvUI profile with latest changes.
