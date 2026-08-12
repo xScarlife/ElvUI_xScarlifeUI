@@ -1,10 +1,10 @@
-v1.42 12/08/2026
+v1.43 12/08/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Updated toc for patch 12.1.0.
+• Converted ElvUI import strings starting with !E1! to !E2!
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
-• None
+• Converted ElvUI import strings starting with !E1! to !E2!
 
 Patch Notes for ElvUI_xScarlifeUI Classic MoP:
-• None
+• Converted ElvUI import strings starting with !E1! to !E2!
