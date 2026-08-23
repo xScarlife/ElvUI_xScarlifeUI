@@ -1,14 +1,33 @@
-v1.44 15/08/2026
+v1.45 23/08/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Updated Y-Offset for the target aura bars
-• Updated Party frame debuffs icon
-• Disabled "Allow others" option in the target aura bars
+• Updated BigWigs profile
+• Increased player frame width
+• Increased target frame width
+• Changed micro bar position
+• Changed GM ticket position
+• Changed party buff & debuff position
+• Changed player buff & debuff position
+• Changed target buff & debuff position
+• Changed aura filter settings for player frame
+• Changed aura filter settings for target frame
+• Changed aura filter settings for party frames
+• Changed aura filter settings for raid frames
+
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
-• Converted ElvUI import strings starting with !E1! to !E2!
+• /
 
 Patch Notes for ElvUI_xScarlifeUI Classic MoP:
-• Updated Y-Offset for the target aura bars
-• Updated Party frame debuffs icon
-• Disabled "Allow others" option in the target aura bars
+• Updated BigWigs profile
+• Increased player frame width
+• Increased target frame width
+• Changed micro bar position
+• Changed GM ticket position
+• Changed party buff & debuff position
+• Changed player buff & debuff position
+• Changed target buff & debuff position
+• Changed aura filter settings for player frame
+• Changed aura filter settings for target frame
+• Changed aura filter settings for party frames
+• Changed aura filter settings for raid frames
