@@ -1,10 +1,14 @@
-v1.47 22/09/2026
+v1.48 09/10/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
-• Updated ElvUI & Bigwigs with the latest changes.
+• Updated ElvUI profile strings to the latest version.
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
-• Updated ElvUI & Bigwigs with the latest changes.
+• Updated ElvUI profile strings to the latest version.
 
 Patch Notes for ElvUI_xScarlifeUI Classic MoP:
-• Updated ElvUI & Bigwigs with the latest changes.
+• Updated ElvUI profile strings to the latest version.
+
+Patch Notes for ElvUI_xScarlifeUI WoW Forever:
+• Updated ElvUI profile strings to the latest version.
+• Added support for the xScarlifeUI installer.
