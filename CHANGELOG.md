@@ -1,13 +1,15 @@
-v1.49 10/10/2026
+v1.50 12/11/2026
 
 Patch Notes for ElvUI_xScarlifeUI Retail:
 • /
 
 Patch Notes for ElvUI_xScarlifeUI Classic Era:
-• Updated version number.
+• Enabled power bar on target frame.
+• Enabled power bar on player frame.
 
 Patch Notes for ElvUI_xScarlifeUI Classic MoP:
 • /
 
 Patch Notes for ElvUI_xScarlifeUI WoW Forever:
-• /
+• Enabled power bar on target frame.
+• Enabled power bar on player frame.
